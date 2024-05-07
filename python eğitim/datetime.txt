@@ -1,0 +1,10 @@
+from datetime import*
+
+import datetime
+x=datetime.now()--- datetime.today()
+şuandaki zamanı bize yazdıran bir yapı
+bunun içinw3scholl iş görür
+x.moaf
+x.year
+x.day
+x.hour

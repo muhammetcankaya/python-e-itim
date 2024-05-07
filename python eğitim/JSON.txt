@@ -1,0 +1,19 @@
+Özel bir veri yapısıdır internetten veri çekmek için kullannılabilir
+bir karakter yapısını okuyabiliriz json ile
+json.loads(bilgier) yazarssak bilgilerin içindeki ifadeyi parçalar bize 
+sunarartık bilgiler üzerinde iişlemler yapabilir parçalama yapabilir 
+içeriğine ulaşabiliriz
+bir yerden bir şey okumak istersen json.load(file) yaparsak dosyayı bir sözlük
+tipinde bize sonar
+json dosyasına yazı yazmak istyorsak 
+json.dump() metodunu kullanırız 
+
+json.dump(yazacağımız_ifade,dosya) dosya nereye yazacaksak onu temsil eder
+
+json.dump(yazacağımız_ifade,dosya,ensure_ascii=False,indent=4)
+3. ifade türkçe karakterde sıkıntı yaşamamıza engel olur 
+4.ifade ise alt alta yazmasını sağlar 
+import textwrap
+textwrap.fill(stringifade,100#"karakter") 10 karakterdde bir aşağı iner güzel
+bir görüntü sağlar
+https://fliphtml5.com/tsyqb/squghttps://fliphtml5.com/tsyqb/squg

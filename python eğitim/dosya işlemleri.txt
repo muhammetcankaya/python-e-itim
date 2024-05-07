@@ -1,0 +1,47 @@
+dosya açmak için kullanılır herhangi bir dosyayı açıp onun içinde işlem 
+yapabilir veya hiç var olmayan bir dosya açabilir ve onun içini doldurabiliriz
+
+
+w modu
+
+bu modu kullanırsak eğer herhangi bir dosyayı açmak veya kurmak için
+o dosyayı her açtığında sıfırlayacaktır
+
+
+r modu
+
+herhangi bir dosyayı okumamız içim kullanırız herhangi bir dosyayı açıp okuyabiliriz
+dosya.read() yaptığımızda bütün dosyayı okur
+yada for i in dosya:
+	print(i)
+dosya.seek(10)
+10.karakterden sonrasını okur
+dosya.tell()
+
+kaçıncı indekte kaldığımızı söyler
+
+a modu
+
+dosya varmı yokmu kontrol eder eğer varsa açar dosyada eskilere dokunmaz
+yaptığınız işlemi ekle dosyaının içini korur
+
+
+x modu
+çokta önemli değil
+bunlar modlar 
+
+with open("dosya.txt","r",encoding="utf-8 ) as dosya:
+
+r+ hem okuma hem yazma  
+
+
+genelde a+ kullancak kanka garanti iş
+
+ad.isalpha() bu fonksiyon ad değişkenini sadece harflerden aluştuğunu kontrol eder
+ad.isdigit() sadece sayısal ifadelerden oluşup oluşmadığını kontrol eder
+
+
+
+
+
+

@@ -1,0 +1,2 @@
+borsa istanbuldaki şirketlerin bir tıkla finansal verilerine ulaşabilirsiniz 
+verilerin görselleşmesi çok iyi değil geliştirilebilir.

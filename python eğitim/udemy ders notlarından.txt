@@ -1,0 +1,162 @@
+ayrıntı fonksiyonlar 
+MAP fonksiyonu 
+map(fonksiyon,liste veya demet)
+içeride aldığımız fonksiyon ikinci aldığımız demet veya liste
+için işlem yapıyor
+örnek
+def double(x)
+	x*2
+	return x
+map(double,[1,2,3])
+böylece bu fonksiyon butun listeye uygulanmış olacak çıktı 
+[2,4,6] olacaktır
+
+REDUCE fonksiyonu 
+reduce(fonksiyon,liste veya demet)
+oluşturduğumuz fonksiyon listenin ilk iki elamanında
+işlem yapıp çıkan değeri üçüncü elemanla işlem yapar
+sonra odeğeride dördüncü elemanla
+örneğin [1,2,3,4]
+x+y fonksiyonunu kullanırsak 1+2 3+3 6+4 den 10 değerini4
+bastırır
+
+FİLTER fonksiyonu
+filter(fonksiyon,liste vb.)
+filter fonksiyonu yalnızca true veya false veren fonksiyonlarda çalışır
+içeriye o tarzda fonksiyonlar atmamız gerekir
+içeride kullandığımız fonksiyonu true yapan değerleri verir
+
+ZİP Fonksiyonu
+zip(liste1,liste2)
+bu şekilde iki listeyi birbiriyle gruplayabilir bu fonksiyon
+liste1=[1,2,3] ve liste2=[3,4,5]olsaydı
+liste=[(1,3),(2,4),(3,5)] şeklince olacaktır liste olarak bastırırsak fonksiyonu
+üç listede kullanabiliriz
+
+ENUMERATE FONKSİYONU
+emumerate(liste) şeklinde verdiğimiz listeyi alıyor her elemanın yanına kaçıncı 
+indexte olduğunu söyliyor
+
+ALL VE ANY fonksiyonlar
+
+all(liste) listenin bütün elemanları true ise true sonuç verir 
+aksi taktirde false verecektir
+any(liste) all fonksiyonun tam zıttına çalışır 
+
+LİVE TOGETHER DİE ALONE
+
+İLERİ VERİ YAPILARI VE OBJELER
+
+Onlk tabanda bir sayıyı 2 lik tabana çevirmek istiyorsak
+bin(15) şeklinde 15 sayısının 2 lik tabanda göstermiş olduk
+Onluk tabanda bir sayıyı 16 lik tabanda göstermek için 
+hex(20) şeklinde 20 sayısını 16 lık tabanda gösteririz
+
+Bir sayının mutlak değerini almak için
+abs() fonksiyonunu kullanabiliriz
+
+bir sayıyı yuvarlamak istediğimizde 
+raound() fonksiyonun kullanabiliriz
+
+içine verdiğmiz dğerlerin en büyüğünü ve en küçüğünü bulmak 
+max() ve min() fonksiyoonlarını kullabiliriz
+
+bir listeyi veya bir demeti toplamak için 
+sum() fonksiyonu kullanılabilir içine liste veya demet atmalıyız
+
+bir sayının üstünü almak için 
+pow() fonksiyonu kullabilriiz pow(2,4) 2 üzeri 4 demektir
+
+
+upper ve lower metodları 
+upper() stringin bütün harflerini büyük harf yapar
+lower() stringin bütün harflerini küçük harf yapar
+
+replace metodu 
+bir strginde bir karakteri değiştirmek için kullanılabiliriz
+"ifade".replace("de","yaprak") de kısmını yaprak olarak değiştirdik
+
+startswith ve endswith
+start bir ifadenin ilk değerinini sorgular doğru iste true verir
+end de son ifadeye bakar doğru ise true verir
+
+
+SPLİT FONKSİYONU
+bir ifadenin içinde boşluklar varrsa yada virgüller yada ne olursa olsun
+split(",") şeklinde uyguladığımız zaman bu fonksiyonu , le göre ifadeyi parçalar ve lliste oluşturur
+
+
+JOİN metedo
+bir listenin elamanlarının arasına bir ifade koyarak tam bir metin olarak verir splitin tersi gibi
+liste=["21","12","2001"]
+"/".join(liste) #yaparsak
+"21/12/2001" olarak döner değer
+
+COUNT metodu
+count() içine bir ifade verdiğşmizde onun bir listede kaç defa geçtiğini söyler
+
+
+FİND VE RFİND FONKİYONLARI
+find(x) x in ifadede ilk kez kaçıncı indexte oldğunu söyler
+rfind(x) x in sondan başlayarak kaçıncı indexte olduğunu söyler
+
+KUMELER SET()
+KÜMELER BİR İFADEYİ SADECE BİR DEFA BARINDIRIR İÇİNDE SÜSLÜ PARANTEZLE KULLANILIR {}
+kümeler sıralı değildir
+KÜME METODLARI 
+add() metodu içeriye girdiğimiz değeri kümeye ekler 
+diffrence() metodu iki kümenin farakını alır küme1.differance(küme2) küme 1im küme ikiden farkı
+discard() metodu ile bir kümeden değer cıkartabiliriz 
+küme1.intersesection(küme2) yaptığımızda iki kümenin kesisimi olacaktır 
+inion() metodu küme1.union(küme2) iki kümenin birleşimini verecektir
+
+
+LİSTEE METODLARI 
+append() listeye eleman ekler en sondan 
+extend() bir listeye başka listenin elamanlarını ekler liste1.extend(liste2)
+insert() metodu istediğimiz indexe elaman ekler liste.insert(2,"a") listenin 2.indexe ekler
+pop() listeden eleman atar ve ekrana basar içine index verirsek onu atar
+remove() listeden elaman atar ama içine hangi elamanı atacaksan söylemen lazım 
+index() aradığın değeri bulur kaçıncı indexte olduğunnu sööyler index(3,4) yaparsak 4. indexten başlayarak arama yapar
+count() verilen bir değerin listede kaç defa geçtiğini söyler
+sort() bir listeyi sayı ise küçükten büyüğe string ise alfabetik olarak sırlar
+
+
+İLERİ SEVİYE FONKSİYONLAR
+*args ve *kwargs
+def fonksiyon(*args): yaptığımız zaman içeriye sonsuz tane arguman girebiliriz bunlari
+bir demet haline çevirir uygulamaya sunar
+def fonksyon(**kwargs): girdiğmiz değerleri bir sözlük oluşturur bunun üzerinede gezinmek
+için for i,h in kwargsçitems():
+yazarsak i,h iki anahtar ve değere ulaşır
+
+iteratorlar
+bir listeye iter(liste) yaparsak listeyi iteratiyora dönüştürürüz içine
+ulaşmak için next(iter(liste)) yaparız
+
+BU KISIMDA BİR KAÇ KISIM ATLADIK 
+
+DATETİME 
+sana günü saati ve zamani veren modul
+datetime.now() şeklinde çağırabiliriz
+bunu bir değişkene atayıp değişken.year veye mounth gibi kullanımlar yaparak bunlara ulaşabliriz
+datetime.ctime(datetime.now()) kullanımı ise ayı güünü yazılı verip saati yanına yazar
+import locale 
+locale.setlocale(locale.LC_ALL,"") YAPARAK KONUMUNUN TR OLDUĞUNU SÖYLERİZZ
+BU SAYEDE GÜNLERİ VE AYLARI TÜRKÇE OLARAK GÖREBİLRİİZ
+datetime.timestamp(datetime.now()) yaparsak saniye cinsinden bize zamanı siyler
+bu saniyeye yi a değerine attık diyelim
+datetime.fronttimestamp(a) yaparak bunu eski halinde gün yıl ay gibi görebilriiz
+
+OS MODÜLÜ 
+bu modül üzerinde çalışılması gereken bir modul çünkü eksiklerin var bu konuda
+
+SYS MODÜLÜ 
+exit() fonksiyonu kullanırsak program sonlanır sys.exit() şeklinde çalışır 
+requests ve beautifılsoup modülü
+requests.get(url) yapınca siteyi almış olduk
+a=response.content yapınca içeriği bizde artık bunu yapınca
+Beautifulsoup(a,"html.parser")yapınca parçalayabilriz artık
+
+
+

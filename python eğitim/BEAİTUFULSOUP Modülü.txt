@@ -1,0 +1,10 @@
+BU modül sayesinden internetten veri çekebiliriz
+import bs4 from Beaitufulsoup
+bu kısımda kullabileceğimiz metodlar vardır
+requests ile siteye istek yollayıp onu content edeceğiz
+parser=BeautifulSoup(requests.get(url).content,"html.parser)
+şeklinde kullanılır
+veri=parser.find("div",{class ve değer}) şeklinde istendiğinde div başlığında
+clası girdiğimiz değer olan bölümü alabiliriz find_all metodunu kullanırsak
+bütün div leri bulabiliriz class verip özellik verirsek bütün o özellikği taşıyon
+sınıflara ulaşabliriz

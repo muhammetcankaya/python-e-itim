@@ -1,0 +1,52 @@
+Bu modül stringler üzerinde işlemleri arttırır
+re.findall("ne aradığın",nerede aradığın)
+mesela bir string ifadede bir şey arıyorsun onu bulur 
+bir liste halinde sana verir.
+re.split(" ",nerede aradığın)
+mesela bir string ifade var sen bu string ifadeyi boşluklarla paralayıp bir
+liste haline getirmek istiyorsun o zaman bunu yap
+re.sup("a","*",x) x'de a gördüğün yere yıldız yaz
+
+re.search() yapısı bizim string ifade de aradığımız şey varmı yokmu onu
+kontrol eder tipini söyler boyunu söyler hakkında bilgi verir
+                   
+re.search("[a-z]",ifade)
+ifade adlı değişkende a dan z ye kadar harflerden varmı demek oluyor 
+yani bir tane küçük harf varmı harf varsa onu bulur
+böyle kullanırsak
+re.search("[^a-z]",ifade) dışında bir değer varsa onun olduğunu söyler
+mesela
+if re.search("[^a-z]",ifade):
+	print("vardır") burada a-z arasındaki harfler dışında bir değer 
+varsa bu blok devreye girer
+if re.search("[a-z]",ifade):
+	print("yoktur") burada da a ve z arasında bir değer varsa bu blok
+devereye girecektir
+------------------------------------------------------------------------
+burada konu dan alakasız 
+raise Exception("buraya kendi istediğimiz bişey") yazarsak 
+artık örneğin bunu bir if bloğunun içinde yazdık o şart sağlandığından 
+program bizim ürettiğimiz isimde bir hata üretecektir
+-------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,15 @@
+Bu modül siteye bağlanmak için kullanılır
+import requests
+sıte=requests.get("siteismi") yaparak internet sitesine erişim sağlarız
+cevap=site.text yaparsak string ifade olarak siteyi çektik
+cevam=json.loads(site.text) yaparsak bunu json yapısıyla liste haline çevirip 
+parçalamış olduk artık buradan veri alabiliriz
+cevap[0] yaparsak sıfırıncı indexteki sözlük gelir bizze onun içinede
+cevap[0]["title"] yazarsak title anahtarının değerinini bize döndürecektir
+
+
+
+
+
+
+

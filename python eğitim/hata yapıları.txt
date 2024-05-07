@@ -1,0 +1,10 @@
+ ValueError tip hataları int str tarzı
+SyntaxError hata yazım hatası
+IndentationError girinti hatası 
+Try-Except yapısı
+hata beklediğimiz kısmın başına try sonunda except yazarız
+expect yanına hatayı yazıp altına o hata olduğunu ne yapması gerektiğini 
+söyleyen ifadeyi gireriz
+eğer 
+except:
+yaparsak hata ne olursa olsun diye haraket eder 
